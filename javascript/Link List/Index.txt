@@ -1,0 +1,8 @@
+Linked List
+	data structure used to store linear information
+	chain on nodes
+1)Search for a given element k in the linklist
+2)Insert new node in link list
+3)Delete node in link list
+4)Reverse a link list
+5)Clone a linked list withh m pointors
