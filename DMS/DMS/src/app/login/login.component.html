@@ -4,30 +4,37 @@
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
           <div class="card shadow-2-strong" style="border-radius: 1rem;  color:white;   background-color: #4a5c6d;">
             <div class="card-body p-5 text-center">
-  
-              <h3 class="mb-5">Login</h3>
-              {{email}}
-              {{password}} 
-  
-              <div class="form-outline mb-4" style="text-align: left !important;"> 
-                <label class="form-label left" for="typeEmailX-2">Email :</label>
-                <input type="email" id="typeEmailX-2" ngModel="email" class="form-control form-control-lg" /> 
-              </div>
-  
-              <div class="form-outline mb-4 text-left" style="text-align: left !important;"> 
-                <label class="form-label" for="typePasswordX-2">Password :</label>
-                <input type="password" id="typePasswordX-2"  ng-model="password"  class="form-control form-control-lg" />
-              </div> 
-              <button class="btn btn-primary btn-md btn-block m-2" type="submit"
-                  style="    background-color: gainsboro;
-                  color: black;
-                  border-color: transparent;"
-              >Reset</button>
-              <button class="btn btn-primary btn-md btn-block m-2" type="submit">Login</button>
-   
+              <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <h3 class="mb-5">Login</h3> 
+                <div class="form-outline mb-4" style="text-align: left !important;"> 
+                  <label class="form-label left" for="typeEmailX-2">Email :</label>
+                  <input type="email" autocomplete="false" id="typeEmailX-2" formControlName="email"  class="form-control form-control-lg" />  
+                  <div *ngIf="loginForm?.get('email')?.hasError('pattern') && loginForm.get('email')?.touched">
+                    Please enter valid email.
+                  </div> 
+                </div>
+    
+                <div class="form-outline mb-4 text-left" style="text-align: left !important;"> 
+                  <label class="form-label" for="typePasswordX-2">Password :</label>
+                  <input type="password" id="typePasswordX-2"  formControlName="password" class="form-control form-control-lg" />
+                  <div *ngIf="loginForm?.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+                    password is required.
+                  </div>
+                  <div *ngIf="loginForm.get('password')?.touched && 
+                  (loginForm?.get('password')?.hasError('minLength') || loginForm?.get('password')?.hasError('maxLength'))">
+                    Password range will be 6-16 keywords.
+                  </div> 
+                </div> 
+                <button class="btn btn-primary btn-md btn-block m-2" type="submit"
+                    style="    background-color: gainsboro;
+                    color: black;
+                    border-color: transparent;"
+                >Reset</button> 
+                <button class="btn btn-primary btn-md btn-block m-2" [disabled]="loginForm.invalid"   type="submit">Login</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section> 
+  </section>  
