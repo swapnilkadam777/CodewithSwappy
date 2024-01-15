@@ -6,7 +6,7 @@ function Fedex(){
 }
 function UPS(){
     this.calculate = package =>{
-        return 3.14 ;
+        return 3.14;
     }
 }
 function USPS(){
@@ -41,8 +41,8 @@ const shipping = new Shipping();
 shipping.setStratergy(fedex)
 console.log(package.company + ":"+ shipping.calculate(package))
  
-shipping.setStratergy(ups)
-console.log(package.company + ":"+ shipping.calculate(package))
+// shipping.setStratergy(ups)
+// console.log(package.company + ":"+ shipping.calculate(package))
 
-shipping.setStratergy(usps)
-console.log(package.company + ":"+ shipping.calculate(package))
+// shipping.setStratergy(usps)
+// console.log(package.company + ":"+ shipping.calculate(package))
