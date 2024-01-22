@@ -25,10 +25,10 @@
                     Password range will be 6-16 keywords.
                   </div> 
                 </div> 
-                <button class="btn btn-primary btn-md btn-block m-2" type="submit"
+                <button class="btn btn-primary btn-md btn-block m-2"  (click)="reset()"
                     style="    background-color: gainsboro;
                     color: black;
-                    border-color: transparent;"
+                    border-color: transparent;"  
                 >Reset</button> 
                 <button class="btn btn-primary btn-md btn-block m-2" [disabled]="loginForm.invalid"   type="submit">Login</button>
               </form>
