@@ -58,7 +58,7 @@ export class AuthService {
           const responseData =  response.json();
           this.userData = responseData;
           sessionStorage.setItem("userData", JSON.stringify(this.userData));
-          this.router.navigate(['/home']); 
+          this.router.navigate(['/pages']); 
         }) 
       } catch (error) {
         console.error('An error occurred during login:', error);

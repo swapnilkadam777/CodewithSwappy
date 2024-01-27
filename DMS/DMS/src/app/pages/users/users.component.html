@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="text-center mb-4">
+    <h2>Users</h2>
+  </div>
+  <div class="text-center">
+    <div style="display: flex;justify-content: space-between;">
+      <div>
+        <span>Types :</span>
+        <select class="m-2">
+          <option>All</option>
+          <option>Pending</option>
+          <option>Completed</option>
+        </select>
+      </div>
+      <input type="text" placeholder="Name" class="w-50" />
+      <button type="button" class="btn btn-info" style="float: right;">Print PDF</button>
+    </div>
+  </div>
+  <div class="text-center mt-2">
+    <table class="table" style="border: 2px double; border-style: solid">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Mobile Number</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data1 of data">
+          <td >{{ data1.name }}</td>
+          <td>
+            <ng-container *ngIf="data1.DOB; else noDOB">{{ data1.DOB | date:'dd/MM/yyyy' }}</ng-container>
+            <ng-template #noDOB></ng-template>
+          </td>   
+          <td>{{ data1.mobileNumber }}</td>
+          <td > <button type="button" class="btn btn-info">Fees</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
