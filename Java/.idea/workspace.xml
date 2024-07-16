@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abceb366-3035-4b5d-8e06-cb846dc4ac9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Strategy/BikePathCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Strategy/CarPathCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Strategy/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Strategy/GoogleMaps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Strategy/PathCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Strategy/TravlingMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Strategy/WalkPathCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Strategy/pathCalculatorStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Threads/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Threads/ThreadWithisAlive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Threads/ThreadbyClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Threads/ThreadbyInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrency/Executors/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrency/Executors/PrintHello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrency/Executors/tryWithCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrency/SyncronizationIssue/Adder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrency/SyncronizationIssue/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrency/SyncronizationIssue/Substractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/Students.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +45,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Client.executor": "Run",
+    "Application.Concurrency.Executors.Main.executor": "Run",
+    "Application.Design_patterns.Builders.Main.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.ThreadWithisAlive.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -59,13 +57,39 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ThreadWithisAlive">
+  <component name="RunManager" selected="Application.Design_patterns.Builders.Main">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Design_patterns.Strategy.Client" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Design_patterns.Strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Concurrency.Executors.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Concurrency.Executors.Main" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Concurrency.Executors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Design_patterns.Builders.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Design_patterns.Builders.Main" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Design_patterns.Builders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,6 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Design_patterns.Builders.Main" />
+        <item itemvalue="Application.Concurrency.Executors.Main" />
         <item itemvalue="Application.ThreadWithisAlive" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Client" />
