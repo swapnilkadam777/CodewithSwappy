@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abceb366-3035-4b5d-8e06-cb846dc4ac9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Concurrency/Executors/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Concurrency/Executors/PrintHello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Concurrency/Executors/tryWithCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Concurrency/SyncronizationIssue/Adder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Concurrency/SyncronizationIssue/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Concurrency/SyncronizationIssue/Substractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/Students.java" afterDir="false" />
+    <list default="true" id="abceb366-3035-4b5d-8e06-cb846dc4ac9f" name="Changes" comment="add builder design pattern exmple and add class diagram">
+      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/Ex3/DatabaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/ex2/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/ex2/WithBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/example1/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/example1/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Design_patterns/Builders/example1/WithBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/BotDifficultyLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/BotPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Ceil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/CeilState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/GameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/HumanPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/PlayerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Symbol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +35,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -42,21 +53,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Client.executor": "Run",
-    "Application.Concurrency.Executors.Main.executor": "Run",
-    "Application.Design_patterns.Builders.Main.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.ThreadWithisAlive.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/CodewithSwappy/Java",
-    "onboarding.tips.debug.path": "D:/CodewithSwappy/Java/src/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Concurrency.Executors.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Design_patterns.Builders.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadWithisAlive.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodewithSwappy/Java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/CodewithSwappy/Java/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Design_patterns.Builders.Main">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Design_patterns.Strategy.Client" />
@@ -142,7 +153,31 @@
       <option name="presentableId" value="Default" />
       <updated>1719592308766</updated>
     </task>
+    <task id="LOCAL-00001" summary="add builder design pattern exmple and add class diagram">
+      <option name="closed" value="true" />
+      <created>1721157496076</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721157496076</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add builder design pattern exmple and add class diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="add builder design pattern exmple and add class diagram" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

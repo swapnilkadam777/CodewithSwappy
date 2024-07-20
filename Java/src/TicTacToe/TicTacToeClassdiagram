@@ -1,0 +1,36 @@
+Game
+    Board
+    Player[2]
+    CurrentPlayer
+    movesHistory<Move>
+    ====================
+    makeMove
+    chaeckDraw
+    chaeckWinner 
+    undo
+    resetGame
+    declareWinnerOrDraw    
+Player
+    Symbol
+    ================== 
+    get_symbol()
+Board
+    Ceil[3][3]
+    ==================
+    Board()
+    checkCeilisEmpty
+    displayBoard
+
+Ceil
+    row
+    col
+    occupied // if occupied then it's mark with Symbol otherwise null
+    ==================
+
+Move
+    row
+    col
+    player  
+----------------------------------- 
+enum Symbol
+    x,o         

@@ -1,0 +1,27 @@
+Class Pen
+    name,
+    bracnd,
+    price    
+gelPen extends Pen
+    Refill
+ballPen extends Pen
+    Refill
+FountainPen extends Pen
+    Ink
+    Nib
+
+Refill
+    id
+    Nib 
+    Ink
+Ink
+    id
+    capacity
+    Colors
+Nib
+    id
+    radius
+enum Colors
+        Red 
+        Blue
+        Black
